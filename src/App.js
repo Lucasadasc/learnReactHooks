@@ -10,6 +10,14 @@ import HookCounterOne from './Components/05_useEffect/HookCounterOne';
 import ClassMouse from './Components/06_runEffectsOnlyOnce/ClassMouse';
 import HookMouse from './Components/06_runEffectsOnlyOnce/HookMouse';
 import MouseContainer from './Components/07_useEffectCleanUp/MouseContainer';
+import IntervalClassCounter from './Components/08_useEffectIncorrectDependency/IntervalClassCounter';
+import IntervalHookCounter from './Components/08_useEffectIncorrectDependency/IntervalHookCounter';
+import DataFetching from './Components/09_FetchingData/DataFecthing';
+import ComponentC from './Components/10_UseContext/ComponentC';
+import { UserContext, UserTeam } from './Components/10_UseContext/UserContext'
+import Counter from './Components/12_useMemoHook/Counter';
+import ClassTimer from './Components/13_UseRefHook/ClassTimer';
+import HookTimer from './Components/13_UseRefHook/HookTimer';
 
 function App() {
   return (
@@ -18,9 +26,39 @@ function App() {
         <h1>React Hooks</h1>
       </div>
 
+      {/* 13  */}
+
+      < HookTimer />
+      < ClassTimer />
+
+      {/* 12 */}
+
+      {/* <Counter /> */}
+
+      {/* 11  */}
+
+      {/* <ParentComponent /> */}
+
+      {/* 10 */}
+      
+      {/* <UserContext.Provider value={'Vishwas'}>
+        <UserTeam.Provider value={'Developer'}>
+          <ComponentC />
+        </UserTeam.Provider>
+      </UserContext.Provider> */}
+
+      {/* 09 */}
+
+      {/* <DataFetching /> */}
+
+      {/* 08 */}
+
+      {/* <IntervalHookCounter /> */}
+      {/* <IntervalClassCounter /> */}
+
       {/* 07 */}
 
-      <MouseContainer />
+      {/* <MouseContainer /> */}
 
       {/* 06  */}
 
