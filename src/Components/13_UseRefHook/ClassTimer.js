@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 
 class ClassTimer extends Component {
-    interval
+    interval // Essa variável é necessária para que o clearInterval funcione. Ela não pode ser declarada dentro do método componentDidMount.
+    
     constructor(props) {
         super(props)
         this.state = {

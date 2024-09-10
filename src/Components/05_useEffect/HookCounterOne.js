@@ -14,7 +14,7 @@ function HookCounterOne() {
     useEffect(() => {
         console.log('useEffect - Updating document title')
         document.title = `Clicked ${count} times`
-    }, [count]) // Com o array de dependências, o useEffect só será executado quando a variável count muda.
+    }, [count]) // Com o array de dependências, o useEffect só será executado quando a variável count muda. Portanto, mesmo que o componente seja renderizado várias vezes, o useEffect só será executado quando a variável count mudar.
 
     return (
         <div>
